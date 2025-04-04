@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Page</title>
+    <style>
+        *{
+            box-sizing:content-box;
+        }
+        #header{
+            display:inline-block;
+            background-color:black;
+            color:white;
+            padding-left:25px;
+            padding-right:25px;
+        }
+        #header a{
+            font-family:helvetica;
+            text-decoration:none;
+        }
+        #header a:hover{
+            color:greenyellow;
+        }
+        .logo{
+            display:inline-block;
+            background-color:red;
+            margin-right:25px;
+            border-radius: 30px;
+padding:20px;
+        }
+        .leftmenu{
+            display:inline-block;
+            
+        }
+        .leftmenu ul{
+           list-style:none;
+           padding:0;
+           margin:0;
+        }
+        .leftmenu ul li{
+              display:inline-block;
+              padding:20px ;
+        }
+        .leftmenu ul li a{
+            color:white;
+        }
+        .leftmenu ul li a.dropdown{
+            color:red;
+        }
+        .leftmenu ul li a:hover , .rightmenu ul li a:hover{
+            color:red;
+        }
+        .rightmenu{
+            display:inline-block;
+            color:black;
+            
+            margin-left:1000px;
+        }
+        .rightmenu ul{
+           list-style:none;
+           padding:0;
+           margin:0;
+        }
+        .rightmenu ul li{
+              display:inline-block;
+              padding:20px ;
+        }
+        .rightmenu ul li a{
+            color:white;
+        }
+        #LargeImage{
+                padding:200px 25px;
+                background: -webkit-linear-gradient(45deg,rgba(231,31,17, .7) 0%,#000000 100%),
+                url(https://theknackinitiative.wordpress.com/wp-content/uploads/2014/03/bane-batman-standoff-the-dark-knight-rises-wall-poster1.jpg) no-repeat left center fixed;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+                background-size:cover;
+        }
+
+        .description-box{
+            width:30%;
+        }
+            .description-box h4{
+                font-family:helvetica;
+                       color: white;
+                       margin:0px;
+                       font-weight:300;
+            }
+        .description-box h1{
+            font-family:serif;
+            margin:0;
+            font-weight:700;
+                font-size:50px;
+                color:white;
+        }
+        .description-box h3{
+            font-family: Helvetica;
+            font-weight:400;
+            margin:0px;
+            color:white;
+            font-size:25px;
+        }
+        .description-box p{
+            margin:25px !important;
+            font-family: Helvetica;
+            font-weight:300;
+            margin:0px;
+            color:white;
+            font-size:16px;
+        }
+        .button1{
+            display:inline-block;
+            padding:12px 20px;
+            background:#000;
+            color:#fff;
+            cursor:pointer;
+            border-radius:25px;
+        }
+        .button1:hover, .button2:hover{
+            background:rgba(0,0,0, .6);
+        }
+        .button2{
+            display:inline-block;
+            padding:10px 18px;
+            border:2px solid#000;
+            color:#fff;
+            cursor:pointer;
+            border-radius:25px;
+        }
+        #videoSection{
+            width:100%;
+            background:black;
+        }
+        .row{
+            font-size:0;
+            width:100%;
+        }
+        .videoBoxes{
+            display:inline-block;
+            background:red;
+            width:15%;
+            height:150px;
+            font-size:16px;
+            margin:2.5%;
+            padding:15px;
+        }
+        .videoBoxes h4{
+            margin:0;
+            padding:0;
+            color:white;
+
+        }
+        .video1{
+            background: -webkit-linear-gradient(45deg,rgba(231,31,17, .5) 0%,#000000 100%),
+                url(https://i.pinimg.com/originals/3c/f4/cf/3cf4cf74674ede94488ee71d7ae04ade.jpg) no-repeat left center fixed;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+                background-size:cover;
+        }
+        .video2{
+            background: -webkit-linear-gradient(180deg,rgba(231,31,17, .5) 0%,#000000 100%),
+                url(https://www.filmofilia.com/wp-content/uploads/2013/04/Pacific-Rim-New-Poster.jpg) no-repeat left center fixed;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+                background-size:cover;
+        }
+        .video3{
+            background: -webkit-linear-gradient(180deg,rgba(231,31,17, .5) 0%,#000000 100%),
+                url(https://2.bp.blogspot.com/_o31CLSHm6KA/TA8B2Cp026I/AAAAAAAAAFM/Je4jEiWYRWo/s1600/Inception+banner+1.jpg) no-repeat left center fixed;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+                background-size:cover;
+        }
+        .video4{
+            background: -webkit-linear-gradient(180deg,rgba(231,31,17, .5) 0%,#000000 100%),
+                url(https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/82385/91878/ATLANTIS-Regular-Reprint-2001-REPRINT-CINEMA-POSTER__19084.1542837934.jpg?c=2?imbypass=on) no-repeat left center fixed;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+                background-size:cover;
+        }
+        .video5{
+            background: -webkit-linear-gradient(180deg,rgba(231,31,17, .5) 0%,#000000 100%),
+                url(https://image.tmdb.org/t/p/original/9dyFXQwmFHI1gMn2JEczgKD1hwO.jpg) no-repeat left center fixed;
+                -webkit-background-size:cover;
+                -moz-background-size:cover;
+                -o-background-size:cover;
+                background-size:cover;
+        }
+    </style>
+</head>
+<body>
+   <div id="header">
+    <div class="logo">Netflix</div>
+    <div class="leftmenu">
+        <ul>
+            <li>
+                <a href="kids.html" class="dropdown">Browse</a>
+                
+            </li>
+            <li> <a href="kids.html">kids</a>
+                
+                <li>
+                    
+                    <a href="kids.html">DVD</a>
+                </li>
+        </ul>
+        
+    </div>
+    <div class="rightmenu">
+        <ul>
+            <li>
+                <a href="kids.html">search</a>
+                
+            </li>
+            <li> <a href="kids.html">bell</a>
+                
+                <li>
+                    
+                    <a href="kids.html">username</a>
+                </li>
+        </ul>
+    </div>
+   </div> 
+   <div id="LargeImage">
+     <div class="description-box">
+        <h4>Netflix Presents</h4>
+        <h1>BATMAN RETURNS AGAIN!</h1>
+        <h3>Coming November 3rd</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, iusto earum. Iure rerum ad suscipit facere error dolorum dicta, dist</p>
+        <div class="button1">Button 1</div>
+        <div class="button2">Button 2</div> 
+     </div>
+   </div>
+   <div id="videoSection">
+    <div class="row">
+        <div class="videoBoxes video1">
+            <h4>Tin Tin</h4>
+        </div>
+        <div class="videoBoxes video2">
+            <h4>Pacific Rim</h4>
+        </div>
+        <div class="videoBoxes video3">
+            <h4>Inception</h4>
+        </div>
+        <div class="videoBoxes video4">
+            <h4>Star Wars</h4>
+        </div>
+        <div class="videoBoxes video5">
+            <h4>Atlantis</h4>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
